@@ -2,14 +2,19 @@
 
   <div class="row">
     <div class='col-md-12'>
-      showing soundcloud playlists.
+      showing ALL playlists.
 
-  	{{> soundcloud }}
-  	
-        {{#with getPlayLists}}
-          <h3>{{ name }}</h3>
-          <p>{{ description }}</p>
-        {{/with}}
+        {{#each getPlayLists}}
+            <h3>{{ name }}</h3>
+            <p>{{ description }}</p>
+        {{/each}}
+      
+    </div>
+
+    <div class='col-md-12'>
+      Search Soundcloud.
+
+        {{> soundcloud }}
       
     </div>
   </div><!-- /.row -->

@@ -2,11 +2,12 @@
 
   <div class="row">
     <div class='col-md-12'>
-
           {{#if getPlayList}}
-            <h3>Your Lifelong Playlist</h3>
-            <h3>{{ getPlayList.name }}</h3>
-            <p>{{ getPlayList.description }}</p>
+            {{#with getPlayList}}
+              <h3>Your Lifelong Playlist</h3>
+              <h4>{{ getPlayList.name }}</h4>
+              <p>{{ getPlayList.description }}</p>
+            {{/with}}
           {{else}}
             <a>Please create your first playlist</a>
             {{> new_playlist}}
