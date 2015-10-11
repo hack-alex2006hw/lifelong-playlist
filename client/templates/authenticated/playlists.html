@@ -2,13 +2,19 @@
 
   <div class="row">
     <div class='col-md-12'>
-      showing ALL playlists.
+      showing ALL MY playlists.
 
-        {{#each getPlayLists}}
+        {{#each getMyPlayLists}}
             <h3>{{ name }}</h3>
             <p>{{ description }}</p>
         {{/each}}
       
+        showing ALL Other playlists.
+
+        {{#each getOtherPlayLists}}
+            <h3>{{ name }}</h3>
+            <p>{{ description }}</p>
+        {{/each}}
     </div>
 
     <div class='col-md-12'>
