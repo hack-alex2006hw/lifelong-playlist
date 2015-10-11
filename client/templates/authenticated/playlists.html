@@ -2,8 +2,10 @@
 
   <div class="row">
     <div class='col-md-12'>
-      showing top soundcloud playlists.
+      showing soundcloud playlists.
 
+  	{{> soundcloud }}
+  	
         {{#with getPlayLists}}
           <h3>{{ name }}</h3>
           <p>{{ description }}</p>

@@ -1,8 +1,5 @@
 
 
-Meteor.loginWithSoundcloud();
-
-
 Template.playlist.helpers({
   getPlayList:function() {
   		var currentUser = Meteor.userId();
